@@ -358,7 +358,7 @@ CustomRender networkImageRender({
                 Text(_alt(context.tree.element!.attributes.cast()) ?? "",
                     style: context.style.generateTextStyle());
           } else {
-            return loadingWidget?.call() ?? const CircularProgressIndicator();
+            return loadingWidget?.call() ?? Container();
           }
         },
       );
